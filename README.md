@@ -65,7 +65,7 @@ Bug 2:
 
 Explain which ones you used and where:
 
-************************ DO NOT CONTINUE MODFIYING BEYOND THIS IF YOU ARE IN PHASE 1 **************************
+*************** DO NOT CONTINUE MODFIYING BEYOND THIS IF YOU ARE IN PHASE 1 **************************
 
 # Phase 2 — Design Redemption
 
