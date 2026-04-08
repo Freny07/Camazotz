@@ -80,7 +80,7 @@ Why it is better:
 #### Improvement 3
 
 What was broken:  
-> CTA Overload 
+> Minor bug
 
 What was improved:  
 > Few lines in ThirdScreen.kt were unneccessay removed them
