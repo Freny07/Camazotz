@@ -7,93 +7,99 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/bg1"
+    android:background="#C7C4A5"
     android:gravity="center">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15px"
+        android:layout_marginBottom="40dp"
         android:gravity="center"
+        android:textStyle="bold"
         android:text="MINDSPARK"
         android:textSize="40sp" />
+
     <androidx.cardview.widget.CardView
-        android:layout_width="410dp"
+        android:backgroundTint="#BCB486"
+        android:layout_width="380dp"
         android:layout_height="420dp"
         android:layout_gravity="center"
         app:cardCornerRadius="20sp">
-    <LinearLayout
-        android:paddingVertical="50dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_gravity="center">
-
-
-        <EditText
-            android:id="@+id/gyyiuwhuihiu12"
-            android:inputType="number"
-            android:layout_width="169dp"
-            android:layout_height="wrap_content"
-            android:hint="ENTER A NUMBER." />
-
-        <EditText
-            android:id="@+id/y2y3273ygq87rfbq"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Enter operator" />
-
-        <EditText
-            android:id="@+id/gyyiuwhuihiv12"
-            android:layout_width="215dp"
-            android:inputType="number"
-            android:layout_height="wrap_content"
-            android:hint="ENTER SECOND NUMBER."/>
-
-
-        <Button
-            android:id="@+id/ajbjhbdlbduibdiubi"
-            android:layout_width="124dp"
-            android:layout_height="62dp"
-            android:gravity="center"
-            android:text="=" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="120dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="50dp">
 
-                    <ImageButton
-                        android:id="@+id/hddguruyghiuh"
-                        android:layout_width="55dp"
-                        android:layout_height="55dp"
-                        android:background="@drawable/buutton_bg"
-                        android:layout_marginRight="75dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/logo1" />
 
-                    <ImageButton
-                        android:id="@+id/hddguruyghivh"
-                        android:layout_width="55dp"
-                        android:layout_height="55dp"
-                        android:background="@drawable/buutton_bg"
-                        android:layout_marginLeft="220dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/logo1" />
+            <EditText
+                android:id="@+id/gyyiuwhuihiu12"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:hint="ENTER FIRST NUMBER"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/y2y3273ygq87rfbq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter operator" />
+
+            <EditText
+                android:id="@+id/gyyiuwhuihiv12"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:hint="ENTER SECOND NUMBER"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+
+            <Button
+                android:id="@+id/ajbjhbdlbduibdiubi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
+                android:text="="
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Output"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hddguruyghiuh"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="75dp"
+                    android:background="@drawable/buutton_bg"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo1" />
+
+                <ImageButton
+                    android:id="@+id/hddguruyghivh"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="175dp"
+                    android:background="@drawable/buutton_bg"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo1" />
+            </LinearLayout>
+
         </LinearLayout>
-
-        <EditText
-            android:id="@+id/editTextNumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-
-            android:inputType="number" />
-
-
-    </LinearLayout>
 
 
 
@@ -104,8 +110,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start Learning"
+        android:backgroundTint="#625555"
         android:textStyle="bold"
-        android:textSize="35sp"/>
+        android:textSize="28sp"/>
 </LinearLayout>
 
 

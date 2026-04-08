@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="#C7C4A5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginPage">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center"
         android:padding="16dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="MindSpark"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:gravity="center"
             />
         <EditText
             android:id="@+id/username"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:hint="Username"
             android:inputType="text"
@@ -28,7 +34,8 @@
 
         <EditText
             android:id="@+id/email"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:hint="Email"
             android:inputType="textWebEmailAddress"
@@ -37,7 +44,8 @@
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:hint="Password"
             android:inputType="textPassword"
@@ -46,7 +54,8 @@
 
         <EditText
             android:id="@+id/confirmPassword"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:hint="Confirm Password"
             android:inputType="textPassword"
@@ -54,20 +63,21 @@
             android:padding="13dp" />
 
         <Button
-            android:id="@+id/submitButton"
+            android:id="@+id/btnContinue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit"
-            android:layout_marginTop="24dp" />
+            android:backgroundTint="@color/black"
+            android:textSize="16dp"
+            android:text="Continue" />
 
         <ImageView
             android:id="@+id/myImageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/images"
-            android:contentDescription="Image Description" />
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            android:contentDescription="Image Description"
+            android:src="@drawable/images" />
 
 
     </LinearLayout>
 
-</ScrollView>
+</LinearLayout>
