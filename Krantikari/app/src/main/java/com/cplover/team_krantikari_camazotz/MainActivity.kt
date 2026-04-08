@@ -12,32 +12,27 @@ import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        val btn2 = findViewById<Button>(R.id.button)
-        val btn = findViewById<Button>(R.id.button3);
+
+        val btnLog = findViewById<Button>(R.id.btnLog)
+        val btnCont = findViewById<Button>(R.id.btnCont);
         val username = findViewById<TextInputEditText>(R.id.pass)
-        btn.setOnLongClickListener {
-            val intent = Intent(this , MainActivity::class.java)
-            startActivity(intent)
-            true
+        btnLog.setOnClickListener {
+            finish()
         }
-        btn2.setOnLongClickListener() {
-            var u = username.text.toString()
-            val txt = "Welcome User : Password=${u}"
+        btnCont.setOnClickListener() {
+            val u = username.text.toString()
             val dur = Toast.LENGTH_LONG
             intent.putExtra("Username",u)
 
-            val toast = Toast.makeText(this , txt , dur)
-            toast.show()
+            val toast = Toast.makeText(this , "Welcome User : Password=${u}" , dur).show()
             val intent = Intent(this , MainActivity2::class.java)
-            var user = username.text.toString()
+            val user = username.text.toString()
             intent.putExtra("Username",user)
             startActivity(intent)
-            true
         }
         val txt = "Welcome"
         val dur = Toast.LENGTH_LONG
@@ -45,5 +40,11 @@ class MainActivity : AppCompatActivity() {
         val toast = Toast.makeText(this , txt , dur)
         toast.show()
 
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) {
+                view, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
+            view.setPadding(insets.left, insets.top, insets.right, insets.bottom)
+            windowInsets
+        }
     }
 }
